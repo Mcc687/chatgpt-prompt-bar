@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+Thumbs.db
+*.log
+*.zip
+
+# Prompt exports may contain private or business-sensitive instructions.
+chatgpt-prompts-*.json
+prompt-backup*.json
+private-*.json

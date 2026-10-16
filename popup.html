@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ChatGPT 提示词快捷栏</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup">
+      <header class="brand-row">
+        <div class="brand">P</div>
+        <div>
+          <h1>提示词快捷栏</h1>
+          <p>ChatGPT 专用</p>
+        </div>
+      </header>
+
+      <section class="status-card">
+        <div>
+          <strong>在 ChatGPT 中显示</strong>
+          <span id="prompt-count">正在读取…</span>
+        </div>
+        <button id="enable-toggle" class="switch" type="button" role="switch" aria-checked="true" aria-label="启用提示词快捷栏"><span></span></button>
+      </section>
+
+      <button id="open-chatgpt" class="primary" type="button">打开 ChatGPT <span>↗</span></button>
+
+      <div class="tip">
+        <span>提示</span>
+        <p>在 ChatGPT 页面按 <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> 可快速展开或收起面板。</p>
+      </div>
+
+      <footer>提示词仅保存在本机浏览器中</footer>
+    </main>
+    <script src="src/prompt-core.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
