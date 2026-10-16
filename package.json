@@ -20,7 +20,7 @@
     "manifest-v3"
   ],
   "scripts": {
-    "test": "node --test tests/*.test.cjs",
+    "test": "node --test tests/manifest.test.cjs tests/prompt-core.test.cjs",
     "check": "node --check src/prompt-core.js && node --check src/panel-style.js && node --check src/content.js && node --check popup.js && npm test",
     "package": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1"
   },
